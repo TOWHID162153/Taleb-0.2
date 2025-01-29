@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link
         href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -51,18 +51,33 @@
 </head>
 
 <body>
-    <!-- HEADER PART-->
-    <header class="bg-[url(icons/hero-bg.jpg)] bg-center bg-cover bg-no-repeat bg-fixed pb-6">
-        <!-- NAVBAR -->
+    <!-- Header part-->
+    <header class="bg-[url(icons/hero-bg.jpg)] md:bg-center md: bg-cover md:bg-no-repeat md:bg-fixed pb-6">
+        <!-- Navbar -->
         <div class="navbar">
-            <!-- NAV LOGO -->
             <div class="navbar-start">
-                <a class="max-w-28 items-center" href="#" target="_blank">
+                <!-- Nav dropdown -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a class="font-raleway text-base font-normal" href="#" target="_blank">Education</a></li>
+                        <li><a class="font-raleway text-base font-normal" href="#" target="_blank">Work Experience</a></li>
+                        <li><a class="font-raleway text-base font-normal" href="#" target="_blank">Skills</a></li>
+                        <li><a class="font-raleway text-base font-normal" href="#" target="_blank">About</a></li>
+                    </ul>
+                </div>
+                <!-- Nav logo -->
+                <a class="max-w-16 md:max-w-24 items-center lg:max-w-26" href="#" target="_blank">
                     <img class="w-100%" src="icons/abu taleb logo.png" alt="ABU">
                     <h3 class="font-playfair text-xl font-extrabold text-center text-[#1c2229]">TALEB</h3>
                 </a>
             </div>
-            <!-- CENTER BUTTONS -->
+            <!-- Nav items -->
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
                     <li><a class="font-raleway text-base font-normal" href="#" target="_blank">Education</a></li>
@@ -71,12 +86,12 @@
                     <li><a class="font-raleway text-base font-normal" href="#" target="_blank">About</a></li>
                 </ul>
             </div>
-            <!-- RIGHT SIDE BUTTON -->
+            <!-- NAv button -->
             <div class="navbar-end">
                 <a class="btn text-lg font-medium" href="tel:+880131466897" target="_blank">Call Now</a>
             </div>
         </div>
-
+        <!-- Banner part -->
         <div class="text-star items-center lg:m-32">
             <h2 class="font-raleway text-7xl font-bold py-1 uppercase">Hi</h2>
             <h3 class="font-raleway text-7xl font-bold py-1 uppercase">My Name is</h3>
@@ -90,78 +105,15 @@
             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Contact ME</button>
         </div>
     </header>
-    <!-- MAIN PArt -->
-    <main>
-        <!-- 1st SECTION -->
-        <section class="bg-slate-300 rounded-3xl -mt-5">
-            <div class="flex justify-center items-center -space-x-10 text-center">
-                <div class="artboard phone-2 bg-slate-400 rounded-3xl -mt-32">box 1</div>
-                <div class="artboard phone-2 bg-slate-500 rounded-3xl -mt-52">box 2</div>
-                <div class="artboard phone-2 bg-slate-600 rounded-3xl -mt-32">box 3</div>
-            </div>
-        </section>
-        <!-- 2nd SECTION
-                -->
+
+    <main>  
         <section>
-            <div class="leading-normal mx-auto py-12 px-4 max-w-xl">
-                <p class="mb-4 text-lg">
-                    The parallax effect in HTML is a web design technique that creates the illusion of depth by making
-                    elements on a
-                    page move at different speeds as the user scrolls through the site. This effect is achieved by
-                    displacing the
-                    backgrounds of page sections at different rates in relation to the foreground content. The result is
-                    a visually
-                    appealing experience that adds dynamism and depth to the web page.
-                </p>
-                <p class="mb-4 text-lg">
-                    In more technical terms, the parallax effect is achieved by manipulating the position and scroll
-                    properties of
-                    HTML
-                    and CSS elements. Typically, background images or gradients are used, and they move at different
-                    speeds compared
-                    to
-                    the main content. This creates the sensation of layers moving at different speeds, generating the
-                    illusion of
-                    three-dimensional depth and motion.
-                </p>
-                <p class="mb-4 text-lg">
-                    The parallax effect has become popular in modern web design due to its ability to enhance the user
-                    experience
-                    and
-                    make pages feel more interactive and engaging. It can be implemented using HTML, CSS, and
-                    JavaScript, and there
-                    are
-                    libraries and frameworks that simplify its integration into websites.
-                </p>
-            </div>
+            <!-- na -->
+            
         </section>
-
-        <!-- 3rd SECTOON -->
-        <!-- 1st SECTION -->
-        <section class="bg-slate-300 rounded-3xl">
-            <div class="flex justify-center items-center -space-x-10 text-center">
-                <div class="artboard phone-2 bg-slate-400 ">box 1</div>
-                <div class="artboard phone-2 bg-slate-500">box 2</div>
-                <div class="artboard phone-2 bg-slate-600">box 3</div>
-                <div class="artboard phone-2 bg-slate-600">box 3</div>
-                <div class="artboard phone-2 bg-slate-500">box 2</div>
-                <div class="artboard phone-2 bg-slate-400 ">box 1</div>
-            </div>
-        </section>
-        <!-- 4th SECTION -->
-        <section class="pt-40 pb-32 relative">
-            <div class="absolute w-full h-full top-0 left-0 bg-cover bg-center bg-no-repeat opacity-80 bg-fixed"
-                style="background-image:url(https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/71fe09e2-9320-4f61-8eca-067243e2ef68.jpeg)">
-            </div>
-            <h1 class="text-white display-2 text-center relative">Parallax Header</h1>
-        </section>
-        <section class="h-[500px]"></section>
-
     </main>
-    <!-- FOOTER PART -->
-    <footer>
 
+    <footer>
     </footer>
 </body>
-
 </html>
